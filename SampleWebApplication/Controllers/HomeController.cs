@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleWebApplication.DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,8 @@ namespace SampleWebApplication.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            LittlenBDEntities productsContext = new LittlenBDEntities();
+            
             return View();
         }
     }
